@@ -1,0 +1,116 @@
+.productCard {
+  width: 20vmax;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax;
+  padding: 5px;
+}
+
+.productCard > img {
+  width: 18vmax;
+  height: 40vh;
+  object-fit:scale-down;
+}
+
+.productCard > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.productCardSpan {
+  margin: 0.5vmax;
+  font: 300 0.7vmax "Roboto";
+}
+
+.productCard > p {
+  font-family: "Roboto";
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+}
+
+.productCard > span {
+  margin: 0.5vmax;
+  color: tomato;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1vmax;
+}
+
+.productCard:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+
+  transform: translateY(-1vmax);
+}
+.starContainer {
+  display: flex !important;
+  justify-content: space-between;
+  width: 100%;
+}
+@media screen and (max-width: 600px){
+  .container {
+    width: 100vw !important;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 ;
+    justify-content:space-around;
+  }
+  .productCard {
+    width: 40vw;
+    margin:5px 0;
+    height:35vh;
+    padding: 0;
+  }
+  .productCard img {
+    height: 22vh;
+  }
+  .productCard > p {
+    font-size: 1.9vmax;
+  }
+  .productCard span {
+    font-size: 12px !important;
+  }
+  .productCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+
+  .productCard > span {
+    font-size: 1.5vmax;
+  }
+
+  .productCard > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax "Roboto";
+  }
+}
+
+@media (max-width:900px) and (min-height: 1000px) {
+  .container {
+    justify-content: space-between;
+  }
+  .productCard {
+    height: 40vh;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-height: 1200px) {
+    .productCard {
+      height:30vh ;
+      margin-bottom: 10px;
+    }
+  }
+
+@media (max-width:350px) {
+ .productCard{
+   width: auto;
+ } 
+}

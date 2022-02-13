@@ -1,0 +1,85 @@
+.dashboardSidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+  padding: 5vmax 2vmax;
+}
+.dashboardSidebar > a:first-child {
+  padding: 0;
+}
+.dashboardSidebar > a > img {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.dashboardSidebar > a > img:hover {
+  filter: drop-shadow(0 0 10px tomato);
+}
+.dashboardSidebar a,
+.treeToggler {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.593);
+  font: 200 1rem "Roboto";
+  margin-bottom: 2vmax;
+  padding: 0.5vmax;
+  transition: all 0.5s;
+}
+.dashboardSidebar a:hover,
+.treeToggler:hover {
+  color: tomato;
+  transform: scale(1.1);
+}
+
+.dashboardSidebar a > P {
+  display: flex;
+  align-items: center;
+}
+.dashboardSidebar a > p > svg {
+  margin-right: 0.5rem;
+}
+
+.MuiTypography-root {
+  background-color: #fff !important;
+}
+
+@media screen and (max-width: 600px) {
+  .dashboardSidebar {
+    width: 100%;
+    position: relative;
+    padding:5vmax auto 2vmax auto;
+    margin: auto;
+    height: auto;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .dashboardSidebar a,
+  .treeToggler {
+    font: 200 0.8rem "Roboto";
+    margin-bottom: 3vmax;
+    padding: 0.5vmax;
+  }
+  .dashboardSidebar a > p > svg {
+    margin-right: 0.3rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .dashboardSidebar {
+    width: 35%;
+  }
+  .dashboardSidebar a,
+  .treeToggler {
+    font: 200 1rem "Roboto";
+    margin-bottom: 3vmax;
+    padding: 0.5vmax;
+  }
+  .dashboardSidebar a > p > svg {
+    margin-right: 0.3rem;
+  }
+}

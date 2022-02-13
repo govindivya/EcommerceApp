@@ -1,0 +1,159 @@
+.updateContainer {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(231, 231, 231);
+  position: fixed;
+  top: 0%;
+  left: 0;
+}
+
+.update {
+  background-color: white;
+  width: 25vw;
+  height: 70vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.updateForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 2vmax;
+  justify-content: space-evenly;
+  height: 70%;
+  transition: all 0.5s;
+}
+
+.updateForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.updateForm > div > input {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 4px;
+  font: 300 0.9vmax cursive;
+  outline: none;
+}
+
+.updateForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: rgba(0, 0, 0, 0.623);
+}
+#updateImage > img {
+  width: 3vmax;
+  border-radius: 100%;
+}
+
+#updateImage > input {
+  display: flex;
+  padding: 0%;
+}
+#updateImage > input::file-selector-button {
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+  height: 5vh;
+  border: none;
+  margin: 0%;
+  font: 400 0.8vmax cursive;
+  transition: all 0.5s;
+  padding: 0 1vmax;
+  color: rgba(0, 0, 0, 0.623);
+  background-color: rgb(255, 255, 255);
+}
+
+#updateImage > input::file-selector-button:hover {
+  background-color: rgb(235, 235, 235);
+}
+.updateBtn {
+  border: none;
+  background-color: tomato;
+  color: white;
+  font: 300 0.9vmax "Roboto";
+  width: 100%;
+  padding: 0.8vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+}
+.updateBtn:hover {
+  background-color: rgb(179, 66, 46);
+}
+@media screen and (max-width: 600px) {
+  .updateConatiner {
+    background-color: white;
+  }
+  .update {
+    width: 100vw;
+    height: 95vh;
+  }
+
+  .updateForm {
+    padding: 5vmax;
+  }
+
+  .updateForm > div > input {
+    padding: 2.5vmax 5vmax;
+    font: 300 1.7vmax cursive;
+  }
+
+  .updateForm > div > svg {
+    font-size: 2.8vmax;
+  }
+
+  #updateImage > img {
+    width: 8vmax;
+    border-radius: 100%;
+  }
+
+  #updateImage > input::file-selector-button {
+    height: 7vh;
+    font: 400 1.8vmax cursive;
+  }
+  .updateBtn {
+    font: 300 1.9vmax "Roboto";
+    padding: 1.8vmax;
+  }
+}
+@media (max-width:900px) and (min-width:601px){
+  .update {
+    width: 50vw;
+    height: 80vh;
+  }
+  .updateForm div input{
+    padding: 1.5vmax 4vmax;
+
+  }
+  .updateBtn{
+    padding-top: 1.5vmax;
+    padding-bottom: 1.5vmax;
+
+  }
+}
+@media (max-width: 1000px) and (min-width:601px) and (min-height: 1024px) {
+  .updateForm > div > input {
+    padding: 2.5vmax 5vmax;
+    font: 300 1.7vmax cursive;
+  }
+  .update {
+    width: 60vw;
+    height: 70vh;
+  }
+  .updateBtn {
+    padding: 2.8vmax;
+  }
+}

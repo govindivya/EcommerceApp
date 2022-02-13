@@ -1,0 +1,193 @@
+.orderDetailsPage {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  padding: 5vmax 10vmax;
+  top: 0;
+  left: 0;
+}
+.orderDetailsPage * {
+  box-sizing: border-box;
+}
+.orderDetailsPage > div > * {
+  margin-bottom: 0.6vmax;
+}
+.orderDetailsPage > div > h3 {
+  width: 100%;
+  text-align: left;
+  color: tomato;
+  font: 400 1.8vmax "Roboto";
+  text-align: center;
+  margin-bottom: 4vmax;
+}
+.orderDetailsPage > div {
+  width: 100%;
+}
+.orderDetailsPage > div > div {
+  padding-bottom: 2vmax;
+  width: 100%;
+  border-bottom: 1.2px solid rgb(82, 82, 82);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: left;
+  height: auto;
+  margin-bottom: 3vmax;
+}
+.orderDetailsPage > div > div p,
+.orderDetailsPage > div > p {
+  font: 100 1.2vmax "Roboto";
+  color: rgb(95, 94, 94);
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 0.5vmax;
+}
+.orderDetailsPage > div > div > p > span,
+.orderDetailsPage > div > p > span {
+  width: 100%;
+  text-align: left;
+  display: inline-block;
+}
+.orderDetailsPage > div > div > h5 {
+  color: tomato;
+  font: 200 1.4vmax "Roboto";
+  margin-bottom: 1vmax;
+}
+
+.orderDetailsPage .orderProductContainer {
+  width: 100%;
+  height: auto;
+  border: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  position: relative;
+}
+.orderProductContainer > h1 {
+  text-align: center;
+  width: 100%;
+  font: 300 2vmax "Roboto";
+  color: tomato;
+}
+.orderProductContainer > .orderProductHeader >p {
+  margin: 5vh 0;
+  font: 300 1.3vmax "Roboto";
+}
+.orderProductContainer > .orderProductHeader{
+  border-bottom: 1.5px solid gray;
+}
+.orderProductContainer > .orderProductHeader,
+.orderProductContainer > div {
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 5vh;
+}
+.orderProductContainer > div > * {
+  width: 33.33% !important;
+  align-items: center;
+  justify-content: center;
+}
+.orderProductContainer > .orderProductBox > .orderImg {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2vmax auto;
+}
+.orderProductContainer > .orderProductBox > .orderImg > p {
+  margin-bottom:1vmax;
+  text-align: center;
+}
+.orderImg  img {
+  width: 80%;
+  height: auto;
+  max-width:150px;
+  box-sizing: content-box;
+  box-shadow: 0px 0px 1px 1px rgb(236, 235, 235),
+  1px 1px 1px 1px rgb(218, 217, 217);
+  padding: 2vmax;
+  transition: all 0.3s linear;
+  aspect-ratio: 1;
+  object-fit: scale-down;
+}
+.orderImg img:hover{
+  transform: translateY(-3%);
+
+}
+
+@media (max-width: 700px) {
+  .orderDetailsPage {
+    padding: 10vmax 5vmax;
+  }
+  .orderDetailsPage > div > * {
+    margin-bottom: 2vmax;
+  }
+  .orderDetailsPage > div > div > p > span {
+    font-size: 2vmax;
+  }
+  .orderDetailsPage > div > h3 {
+    font-size: 3vmax;
+  }
+  .orderDetailsPage > div > div > h5 {
+    font-size: 2.7vmax;
+  }
+  .orderProductContainer > h1{
+    font-size: 2.5vmax;
+  }
+   .orderProductContainer .orderImg img{
+    width:100% !important;
+  }
+  .orderProductContainer > div  p{
+    font-size: 1.8vmax !important;
+    text-align: center;
+  }
+  .orderProductHeader > p{
+    font-size: 2.2vmax !important;
+  }
+
+
+
+}
+
+@media (min-width: 701px) and (max-width: 1200px) {
+  .orderDetailsPage {
+    padding: 8vmax 4vmax;
+  }
+  .orderDetailsPage > div > * {
+    margin-bottom: 1.5vmax;
+  }
+  .orderDetailsPage > div > div > p > span,
+  .orderDetailsPage > div > p > span {
+    font-size: 1.5vmax;
+  }
+  .orderDetailsPage > div > h3 {
+    font-size: 2.5vmax;
+  }
+  .orderDetailsPage > div > div > h5 {
+    font-size: 2.2vmax;
+  }
+  .orderProductContainer > h1{
+    font-size: 2.2vmax;
+  }
+   .orderProductContainer .orderImg img{
+    width:90% !important;
+  }
+  .orderProductContainer > div  p{
+    font-size: 1.5vmax !important;
+    text-align: center;
+  }
+  .orderProductHeader > p{
+    font-size: 2vmax !important;
+  }
+}

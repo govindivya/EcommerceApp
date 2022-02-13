@@ -1,0 +1,75 @@
+.notFoundContainer{
+    box-sizing: border-box;
+    display: flex;
+    align-items:center;
+    max-height:100vh;
+    height:100vh;
+    justify-content: center;
+    width: 100%;
+    background-color:black;
+    flex-direction: column;
+    padding: 5vmax 0;
+    position:fixed;
+}
+.goHome a{
+  font-size:2vmax;
+  color: white;
+  text-decoration: none !important;
+  font-family: 'Roboto' , Verdana, Geneva, Tahoma, sans-serif;
+  border: 2px solid tomato;
+  padding: 1vmax 3vmax;
+}
+.goHome a:hover{
+  background-color: transparent;
+  color: tomato;
+  border-color: cyan;
+  box-shadow: 0px 0px 4px 2px cyan ;
+}
+.notFoundContainer >  svg {
+  font-size:5vmax;
+}
+.copy {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-dasharray: 8% 30%;
+  stroke-dashoffset: 0%;
+  animation: textAnimation 6s linear infinite;
+}
+@keyframes textAnimation {
+  100% {
+    stroke-dashoffset: -35%;
+  }
+}
+.copy1 {
+  stroke: orange;
+  animation-delay: -1s;
+}
+.copy2 {
+  stroke: red;
+  animation-delay: -2s;
+}
+.copy3 {
+  stroke: green;
+  animation-delay: -3s;
+}
+.copy4 {
+  stroke: blue;
+  animation: delay -4s;
+}
+.copy5 {
+  stroke: tomato;
+  animation-delay: -5s;
+}
+
+@media (max-width:600px){
+  .notFoundContainer >  svg {
+    font-size:10vmax;
+  }
+}
+
+@media (max-width:1000px) and (min-width:601px) {
+  .notFoundContainer >  svg {
+    font-size:8vmax;
+  }
+}
