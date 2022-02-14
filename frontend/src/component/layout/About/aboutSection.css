@@ -95,6 +95,10 @@
 
 
 @media screen and (max-width: 600px) {
+  .aboutSectionContainer{
+  height: 85vh;
+
+  }
   .aboutSectionContainer > div {
     display: block;
   }
@@ -105,11 +109,11 @@
   }
 
   .aboutSectionContainer > div > div > p {
-    font: 100 2vmax "Roboto";
+    font: 100 2.3vmax "Roboto";
   }
 
   .aboutSectionContainer > div > div > span {
-    font: 100 1.4vmax "Roboto";
+    font: 100 1.6vmax "Roboto";
     width: 70%;
   }
 
@@ -118,10 +122,10 @@
   }
 
   .aboutSectionContainer2 > h2 {
-    font: 100 3vmax "Roboto";
+    font: 100 3.4vmax "Roboto";
     margin: 2vmax;
   }
-  .aboutSectionContainer2 > p{
-    font-size: 2vmax;
+  .aboutSectionContainer2 > p,.aboutSectionContainer2 >p >a{
+    font-size: 2vmax !important;
   }
 }
