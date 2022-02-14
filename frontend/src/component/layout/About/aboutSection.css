@@ -73,13 +73,24 @@
 
 .aboutSectionContainer2 > h2 {
   color: rgba(0, 0, 0, 0.623);
-  font: 100 2vmax "Roboto";
+  font: 300 2vmax "Roboto";
   margin: 2vmax;
+  color:tomato;
+  border-bottom: 2px solid tomato;
 }
-.aboutSectionContainer2 > p{
-  color: rgba(0, 0, 0, 0.523);
-  font: 100 1.4vmax "Roboto";
-  margin: 2vmax;
+.aboutSectionContainer2  p{
+  /* color: rgba(0, 0, 0, 0.623); */
+  font: 200 2vmax "Roboto";
+  font-size: 1.4vmax !important;
+  text-align: left;
+  color:rgb(120, 120, 158) !important;
+  /* line-height: 50px; */
+}
+.aboutSectionContainer2 > p > a{
+  font: 200 2vmax "Roboto";
+  font-size: 1.4vmax !important;
+  color:blue !important;
+  
 }
 
 
