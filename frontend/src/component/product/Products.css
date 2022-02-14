@@ -1,0 +1,227 @@
+.productsHeading {
+  margin: 2vmax auto;
+  width: 15vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 2vmax;
+  color: rgba(0, 0, 0, 0.678);
+  font: 500 1.8vmax "Roboto";
+  text-align: center;
+}
+.productMain{
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+.products.container {
+  display: flex;
+  margin: 2vmax auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  min-height: 10vh;
+}
+.none{
+  display: none !important;
+}
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  margin: 6vmax;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.page-item {
+  background-color: white;
+  border: 1px solid black;
+  padding: 1vmax 1.5vmax;
+  cursor: pointer;
+  transition: all 0.3s;
+  list-style: none;
+  text-decoration: none;
+}
+.page-item:first-child {
+  border-radius: 5px 0 0 5px;
+}
+.page-item:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.page-link {
+  text-decoration: none !important;
+  font: 300 1vmax "Roboto";
+  color: rgb(80, 80, 80);
+  transition: all 0.3s;
+}
+.page-item:hover {
+  background-color: rgb(230, 230, 230);
+}
+.page-item:hover .page-link {
+  color: tomato;
+}
+.pageItemActive {
+  background-color: tomato;
+}
+.pageLinkActive {
+  color: white;
+}
+.filterBoxContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items:baseline;
+  height: 5vmax;
+  margin: 0;
+  overflow-y: visible;
+  z-index: 10;
+  margin-top: 5vh;
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+.pricefilterBox {
+  position: relative;
+  width: 20%;
+  max-width: 40vw;
+}
+.ratingFilter{
+  width:10%;
+  color: rgb(39, 39, 39);
+  font-family: 'Roboto';
+  font-size: 16px;
+}
+.ratingFilter h4{
+  font-weight:300 !important;
+
+}
+
+.categoryHeading {
+  margin: 0 auto !important;
+  padding:5px 20px !important;
+  border: 1px solid gray;
+  text-align:center;
+  font-weight: 300;
+  display: flex;
+}
+.categoryBox{
+  position: relative;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.category{
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  list-style: none;
+  background-color: rgb(238, 236, 236);
+  border: 1px solid rgba(0,0,0,0.4);
+  border-radius: 5px;
+  padding: 10px 0px;
+  margin-top: 10px;
+}
+.category li{
+  width: 1000%;
+  padding: 4px 10px;
+}
+.category li:hover{
+  background-color:gray;
+  color:white;
+}
+.productInsideSearch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.productInsideSearch  input{
+  padding:1vmax 2vmax;
+  border:1px solid gray;
+  outline: none;
+
+}
+.productInsideSearch > form > input:first-child{
+  border-radius: 20px 0 0 20px ;
+  font: 100 1vmax "cursive";
+  color: gray;
+  }
+.productInsideSearch > form > input:last-child{
+background-color: tomato;
+border-radius: 0 20px 20px 0 ;
+font: 100 1vmax "cursive";
+color:white;
+}
+.noProduct{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+.noProduct h1{
+  font: 500 2.5vmax 'Roboto';
+  color: tomato;
+}
+.noProduct button{
+  margin-top: 5vmax;
+ padding: 1vmax 2vmax;
+ background-color: rgb(168, 8, 168);
+ font:200 2vmax 'Roboto';
+ color:white;
+}
+.noProduct button:hover{
+background-color:rgb(141, 23, 141);
+}
+@media (max-width: 700px) {
+  .page-link {
+    font: 200 2vmax "Roboto";
+  }
+  .productsHeading {
+    font-size: 20px;
+    width: 30vw;
+  }
+  .categoryHeading{
+    font-size: 1rem !important;
+    padding: 5px 10px;
+  }
+  .filterBoxContainer{
+    width: 100%;
+    flex-wrap: wrap;
+    height: 10vmax;
+    width: 100vw;
+  }
+
+  .categoryBox{
+    justify-content: space-between !important;
+    width:50vw;
+    margin-right: 10px;
+    margin: 0 5px;
+  }
+  .ratingFilter{
+    width:30vw;
+  }
+  .pricefilterBox{
+    width:40vw;
+  }
+  .products.container{
+    margin-top:75px;
+  }
+  .noProduct h1{
+    font: 500 3vmax 'Roboto';
+    color: tomato;
+  }
+}
+
+@media (max-width: 1200px) {
+}

@@ -1,0 +1,126 @@
+.adminReviews {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+  height: auto;
+  overflow-x: hidden;
+  z-index: 2;
+  background-color: white;
+}
+
+.adminReviews,
+.adminReviews * {
+  box-sizing: border-box;
+  text-decoration: none !important;
+}
+
+.adminReviewsContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75%;
+  border-left: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 5vmax;
+  min-height: 100vh;
+}
+
+.adminReviewsContainer > h1 {
+  color: rgba(0, 0, 0, 0.733);
+  color: whitesmoke;
+  position: relative;
+  font: 300 2.5vmax "Roboto";
+  background-color: blueviolet;
+  text-align: center;
+  width: auto;
+  padding: 1vmax 5vmax;
+  width: 100%;
+  max-width: 900px;
+  border-bottom: 2px solid gray;
+  margin: auto;
+  margin-bottom: 1vmax;
+}
+.adminReviewsContainer > h1 > span {
+  position: relative;
+  margin: auto;
+}
+.adminReviewsBox {
+  position: relative;
+  width: 90%;
+  background-color: whitesmoke;
+  margin: 2vmax auto;
+  padding: 3vmax;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.01),
+    1px 1px 1px 3px rgba(0, 0, 0, 0.03), -1px -1px 1px 3px rgba(0, 0, 0, 0.05),
+    2px 2px 3px 4px rgba(0, 0, 0, 0.03), -2px -2px 3px 4px rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.adminReviewsBox h1 {
+  font: 200 1.6vmax "Roboto";
+  color: rgba(0, 0, 0, 0.733);
+  padding: 1vmax;
+}
+.adminReviewsBox p {
+  font: 100 1.2vmax "Roboto";
+  color: rgba(0, 0, 0, 0.733);
+}
+.adminReviewIcons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.adminReviewIcons >:first-child {
+  color: green;
+  font-size: 2vmax;
+}
+.adminReviewIcons >:nth-child(2) {
+  color: red;
+  font-size: 2vmax;
+}
+@media screen and (max-width: 600px) {
+  .adminReviewsContainer {
+    border-left: none;
+    position: relative;
+    padding: 2vmax 3px;
+    width: 100%;
+  }
+  .adminReviewsContainer > h1{
+    font-size: 3vmax;
+    padding: 3vmax;
+  }
+  .adminReviewsHeader > p {
+    font-size: 1.7vmax;
+  }
+  .adminReviewsBox{
+    padding: 4vmax 2vmax;
+  }
+  .adminReviewsBox > p {
+    font-size: 1.4vmax;
+  }
+  .adminReviewsBox h1 {
+    font-size: 2.4vmax;
+  }
+  .adminReviewsBox p {
+    font-size: 2vmax;
+  }
+  .adminReviewIcons :first-child,.adminReviewIcons :last-child{
+    font-size: 4vmax;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .adminReviewsContainer {
+    width: 65%;
+  }
+}

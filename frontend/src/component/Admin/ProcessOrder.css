@@ -1,0 +1,147 @@
+.processOrder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+.processOrder,
+.processOrder * {
+  box-sizing: border-box;
+}
+.processOrderContainer {
+  border-left: 1px solid rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75%;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.processBox1 {
+  position: relative;
+  width: 70%;
+  min-height: 100vh;
+  padding: 4vmax 1vmax;
+}
+.processBox1 > h1 {
+  position: relative;
+  color: coral;
+  font: 200 1.6vmax "Roboto";
+  margin-bottom: 3vmax;
+}
+.processBox1 > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2vmax;
+  justify-content: space-evenly;
+}
+.processBox1 > div > p {
+  font: 100 1.3vmax "Roboto";
+  color: rgba(0, 0, 0, 0.7);
+  text-align: left;
+  width: 50%;
+}
+.processBox1 > div > h1 {
+  width: 100%;
+  text-align: left;
+  color: coral;
+  font: 200 1.6vmax "Roboto";
+}
+.processBox2 {
+  width: 30%;
+  min-height: 100vh;
+  padding:4vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid rgba(0, 0, 0, 0.4);
+  flex-direction: column;
+
+}
+.processBox2 select {
+  position: relative;
+  width: max-content;
+  padding: 1vmax 2vmax;
+  font: 200 1.5vmax "Robot";
+  margin-bottom:2vmax;
+}
+.processBox2 > button{
+  background-color:rgb(247, 119, 96);
+  color: white;
+  padding: 1vmax 2vmax;
+  font: 200 1.5vmax "Robot";
+}
+.processBox2 > button:hover{
+  background-color: tomato;
+}
+
+@media screen and (max-width: 600px) {
+  .processOrderContainer {
+    border-left: none;
+    position: relative;
+    padding: 2vmax;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .processBox1,
+  .processBox2 {
+    width: 100%;
+    min-height:0;
+    height: auto;
+    width: 100%;
+    padding: 4vmax;
+  }
+
+  .processBox1 > h1 ,.processBox1 > div > h1 {
+    font-size: 3vmax;
+  }
+  .processBox1 > div{
+    margin-bottom: 3vmax;
+  }
+  .processBox1 > div > p {
+    font-size: 2vmax;
+
+  }
+  .adminIcon {
+    font-size: 2.5vmax;
+  }
+  .processBox2{
+    border: none;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .processOrderContainer {
+    width: 65%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .processBox1,
+  .processBox2 {
+    min-height: 0;
+    height: auto;
+    width: 100%;
+    padding: 4vmax;
+  }
+  
+  .processBox1 > h1 ,.processBox1 > div > h1 {
+    font-size: 2.6vmax;
+  }
+  .processBox1 > div{
+    margin-bottom: 2.5vmax;
+  }
+  .processBox1 > div > p {
+    font-size: 1.8vmax;
+
+  }
+  .processBox2{
+    border: none;
+  }
+}
