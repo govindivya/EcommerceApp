@@ -67,7 +67,9 @@ const AdminAddUser= React.lazy(()=>import("./component/Admin/AdminAddUser"))
 const AdminReviews = React.lazy(() => import("./component/Admin/AdminReviews"));
 const ProcessOrder = React.lazy(() => import("./component/Admin/ProcessOrder"));
 const Home = React.lazy(() => import("./component/Home/Home"));
-const Contact = React.lazy(()=>import("./component/ContactAbout/Contact"))
+const Contact = React.lazy(()=>import("./component/layout/Contact/Contact"));
+const About = React.lazy(()=>import('./component/layout/About/About'));
+
 
 const App = () => {
   const { isAuthenticated, user, error } = useSelector((state) => state.user);
@@ -112,6 +114,8 @@ const App = () => {
           <Route path="/products" exact element={<Products />} />
           <Route path="/login" exact element={<LoginSignUp />} />
           <Route path="/contact" exact element={<Contact />} />
+          <Route path="/about" exact element={<About />} />
+
 
           <Route
             path="/account"
