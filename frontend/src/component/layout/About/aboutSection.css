@@ -76,18 +76,12 @@
   font: 100 2vmax "Roboto";
   margin: 2vmax;
 }
-
-.aboutSectionContainer2 > a > svg {
-  font-size: 4vmax;
+.aboutSectionContainer2 > p{
+  color: rgba(0, 0, 0, 0.523);
+  font: 100 1.4vmax "Roboto";
+  margin: 2vmax;
 }
 
-.youtubeSvgIcon {
-  color: tomato;
-}
-
-.instagramSvgIcon {
-  color: rgb(144, 81, 202);
-}
 
 @media screen and (max-width: 600px) {
   .aboutSectionContainer > div {
@@ -116,9 +110,7 @@
     font: 100 3vmax "Roboto";
     margin: 2vmax;
   }
-
-  .aboutSectionContainer2 > a > svg {
-    font-size: 6vmax;
-    margin: 1vmax;
+  .aboutSectionContainer2 > p{
+    font-size: 2vmax;
   }
 }

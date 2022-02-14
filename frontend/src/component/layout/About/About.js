@@ -31,17 +31,17 @@ const About = () => {
             </span>
           </div>
           <div className="aboutSectionContainer2">
-            <Typography component="h2">Our Brands</Typography>
-            <a
-              href="https://www.facebook.com/profile.php?id=100017806238756"
-              target="blank"
-            >
-              <FacebookIcon className="youtubeSvgIcon" />
-            </a>
-
-            <a href="https://www.instagram.com/govindkushwaha827/" target="blank">
-              <InstagramIcon className="instagramSvgIcon" />
-            </a>
+            <h2>I am an NITian</h2>
+            <p>I am a 3rd year (Undegraduate) student at NIT Patna</p>
+            <p>
+              I am very intreseted in software devlopement and and always keen
+              to learn new technologies
+            </p>
+            <p>
+              I have good knowledge of javascript , mongodb,react,express,nodejs
+              and litle bit knowledge of MySQL, PostgreSQL,python,c++ and
+              intermediate knowledge of JAVA.
+            </p>
           </div>
         </div>
       </div>
