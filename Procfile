@@ -1,1 +1,1 @@
-web: node --max-old-space-size=1024 backend/server.js
+web: gunicorn backend/server.js
